@@ -1,0 +1,20 @@
+interpreter
+|-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- ast
+|   |-- ast.go
+|   |-- go.mod
+|-- go.mod
+|-- lexer
+|   |-- go.mod
+|   |-- lexer.go
+|   |-- lexer_test.go
+|-- main.go
+|-- parser
+|   |-- go.mod
+|   |-- parser.go
+|   |-- parser_test.go
+|-- token
+|-- go.mod
+|-- token.go
