@@ -9,7 +9,7 @@ def ls(data):
     the following:
     $ python -m pyls
     Should produce the following output:
-    LICENSE README.md ast go.mod lexer main.go parser token
+    LICENSE.txt README.md ast go.mod lexer main.go parser token
     This lists out the top level (in the directory interpreter) directories and files.
     Notice it does not list .gitignore, because that is the default behaviour of ls,
     i.e. files and directories whose names start with . are omitted by default.
@@ -33,7 +33,7 @@ def ls_a(data):
     files starting with ’.’), example:
     $ python -m pyls -A
     Should produce the following output:
-    .gitignore LICENSE README.md ast go.mod lexer main.go parser token
+    .gitignore LICENSE.txt README.md ast go.mod lexer main.go parser token
     """
 
     # Iterating through the json
@@ -48,7 +48,7 @@ def ls_l(data):
     Implement the argument -l, that prints the results vertically with additional
     information:
     $ python -m pyls -l
-    -rw-r--r-- 1071 Nov 14 11:27 LICENSE
+    -rw-r--r-- 1071 Nov 14 11:27 LICENSE.txt
     -rw-r--r-- 83 Nov 14 11:27 README.md
     drwxr-xr-x 4096 Nov 14 15:58 ast
     -rw-r--r-- 60 Nov 14 13:51 go.mod
@@ -94,7 +94,7 @@ def ls_l_r(data):
     -rw-r--r-- 60 Nov 14 13:51 go.mod
     drwxr-xr-x 4096 Nov 14 15:58 ast
     -rw-r--r-- 83 Nov 14 11:27 README.md
-    -rw-r--r-- 1071 Nov 14 11:27 LICENSE
+    -rw-r--r-- 1071 Nov 14 11:27 LICENSE.txt
     """
 
     # Iterating through the json
@@ -136,7 +136,7 @@ def ls_l_r_t(data):
     drwxr-xr-x 4096 Nov 14 14:57 token
     -rw-r--r-- 74 Nov 14 13:57 main.go
     -rw-r--r-- 60 Nov 14 13:51 go.mod
-    -rw-r--r-- 1071 Nov 14 11:27 LICENSE
+    -rw-r--r-- 1071 Nov 14 11:27 LICENSE.txt
     -rw-r--r-- 83 Nov 14 11:27 README.md
     NOTE: Notice, in the above example, the flag -r is also present, so the files
     are printed in reverse order of time_modified (i.e. newest first)
@@ -169,16 +169,16 @@ def ls_l_r_t(data):
         print('{}'.format(info))
 
 
-def ls_l_r_t__filter(data_):
+def ls_l_r_t__filter(data):
     # TODO: code logic
-    pass
+    print('To be implemented')
 
 
-def ls_h(data_):
+def ls_h(data):
     # TODO: code logic
-    pass
+    print('To be implemented')
 
 
-def ls__help(data_):
+def ls__help(data):
     # TODO: code logic
-    pass
+    print('To be implemented')

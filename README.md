@@ -10,3 +10,12 @@ Subtask 6: ls -l -r -t --filter=<option>        python -m pyls -l       -r      
 Subtask 7: Handle Paths                         python -m pyls -l       <path>
 Subtask 8: ls -h                                python -m pyls -h       <path>
 Subtask 9: ls --help                            python -m pyls --help
+
+To install:
+pip install .
+
+To run:
+python pyls.py <arguments>
+
+To test:
+python -m pytest tests

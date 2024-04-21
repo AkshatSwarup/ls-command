@@ -6,8 +6,7 @@ the style of ls (linux utility).
 
 import sys
 import json
-from ls_methods import *
-
+from ls_command.ls_methods import *
 
 def open_file(file_path):
     # Opening JSON file
